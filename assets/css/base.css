@@ -20,7 +20,6 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
-  height: 4000px;
 }
 
 a {
@@ -32,30 +31,8 @@ ul {
   list-style-type: none;
 }
 
-.slick-initialized .slick-slide {
-  display: flex !important;
-}
-
-.slick-dots {
-  display: flex !important;
-  margin-left: -4px;
-}
-
-.slick-dots button {
-  font-size: 0;
-  margin: 6px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--brown-color);
-  border: none;
-  transition: all 0.2s linear;
-  cursor: pointer;
-}
-
-.slick-dots .slick-active button {
-  background-color: var(--primary-color);
-  cursor: default;
+main {
+  overflow: hidden;
 }
 
 .btn {
