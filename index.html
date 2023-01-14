@@ -18,6 +18,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
     <!-- Wow Js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
@@ -40,13 +46,13 @@
   <body>
     <main>
       <header class="header fixed-top">
-        <div class="main-content">
-          <div class="body">
+        <div class="grid wide">
+          <div class="body row sm-gutter">
             <!-- Logo -->
             <img src="./assets/img/logo.svg" alt="Lesson." class="logo" />
 
             <!-- Nav -->
-            <nav class="navbar">
+            <nav class="navbar hide-on-mobile">
               <ul class="navbar-list">
                 <li class="navbar-item">
                   <a class="navbar-link active" href="#!">Home</a>
@@ -65,8 +71,36 @@
             </nav>
 
             <!-- Action -->
-            <div class="action">
+            <div class="action hide-on-mobile">
               <a href="#!" class="btn sign-up-btn">Sign Up</a>
+            </div>
+
+            <!-- navbar-moble-tablet -->
+            <div class="navbar__bars-btn hide-on-pc hide-on-tablet">
+              <label for="navbar-btn--input" class="navbar-btn">
+                <i class="fas fa-bars fa-2x"></i>
+              </label>
+              <input
+                type="checkbox"
+                hidden
+                name="btn"
+                id="navbar-btn--input"
+                class="navbar-input"
+              />
+              <label for="navbar-btn--input" class="navbar__overlay"></label>
+
+              <nav class="navbar__mobile">
+                <label for="navbar-btn--input" class="navbar__mobile-close">
+                  <i class="fas fa-times fa-2x"></i>
+                </label>
+                <ul>
+                  <li><a href="#!">Home</a></li>
+                  <li><a href="#!">Courses</a></li>
+                  <li><a href="#!">Pricing</a></li>
+                  <li><a href="#!">Reviews</a></li>
+                  <li><a href="#!">Sign in</a></li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
@@ -75,7 +109,7 @@
       <!-- Hero -->
       <div class="hero">
         <div class="grid wide">
-          <div class="row">
+          <div class="row sm-gutter">
             <!-- Hero left -->
             <div class="media-block col l-6 m-12 c-12">
               <img
@@ -147,7 +181,7 @@
       <!-- Popular -->
       <div class="popular">
         <div class="grid wide">
-          <div class="popular-top row">
+          <div class="popular-top row sm-gutter">
             <div class="info">
               <h2 class="heading lv2">Our popular courses</h2>
               <p class="desc">
@@ -302,7 +336,7 @@
       <!-- Feedback -->
       <div class="feedback">
         <div class="grid wide">
-          <div class="feedback-list row">
+          <div class="feedback-list row sm-gutter">
             <!-- Feedback item 1 -->
             <div class="feedback-item">
               <div class="info col l-4 m-3">
@@ -390,7 +424,7 @@
       <!-- Features 1 -->
       <div class="features">
         <div class="grid wide">
-          <div class="body row">
+          <div class="body row sm-gutter">
             <div class="images col l-7 m-12 c-12">
               <img
                 class="lower"
@@ -421,7 +455,7 @@
       <!-- Features 2 -->
       <div class="features features-2nd">
         <div class="grid wide">
-          <div class="body row">
+          <div class="body row sm-gutter">
             <div class="images col l-6 m-12 c-12">
               <img
                 src="./assets/img/feature-3.jpg"
@@ -445,7 +479,7 @@
 
       <!-- Blog -->
       <div class="blog">
-        <div class="main-content">
+        <div class="grid wide">
           <div class="blog-top">
             <h2 class="heading lv2">Our blog</h2>
             <p class="desc">
@@ -656,8 +690,8 @@
 
       <footer class="footer">
         <div class="grid wide">
-          <div class="row">
-            <!-- col mn 1 -->
+          <div class="row sm-gutter">
+            <!-- column 1 -->
             <div class="col l-3 m-6 c-12">
               <img
                 src="./assets/img/logo-white.svg"
@@ -700,7 +734,7 @@
               </div>
             </div>
 
-            <!-- col 2 -->
+            <!-- column 2 -->
             <div class="col l-3 m-6 c-12">
               <h3 class="title">Company</h3>
               <ul class="list">
@@ -719,7 +753,7 @@
               </ul>
             </div>
 
-            <!-- col 3 -->
+            <!-- column 3 -->
             <div class="col l-3 m-6 c-12">
               <h3 class="title">Support</h3>
               <ul class="list">
@@ -738,7 +772,7 @@
               </ul>
             </div>
 
-            <!-- col 4 -->
+            <!-- colum 4 -->
             <div class="col l-3 m-6 c-12">
               <h3 class="title">Address</h3>
               <ul class="list">

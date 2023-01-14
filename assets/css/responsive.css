@@ -1,5 +1,8 @@
 /* PC */
 @media (min-width: 1024px) {
+  .hide-on-pc {
+    display: none !important;
+  }
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
@@ -7,6 +10,10 @@
 
 /* Mobile and Tablet */
 @media screen and (max-width: 1023px) {
+  .hide-on-mobile-tablet {
+    display: none !important;
+  }
+
   .features .content {
     margin-top: 32px;
   }
@@ -14,6 +21,10 @@
 
 /* Tablet*/
 @media screen and (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+
   .footer div {
     margin-top: 24px;
   }
@@ -21,6 +32,19 @@
 
 /* Mobile  */
 @media screen and (max-width: 739px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+  
+  .header {
+      /* margin: 0 24px; */
+  }
+
+  .header .body {
+    justify-content: space-between;
+    margin: 0 24px;
+  }
+
   .footer div {
     text-align: center;
     margin-bottom: 16px;
