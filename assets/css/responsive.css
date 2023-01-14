@@ -1,0 +1,36 @@
+/* PC */
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+}
+
+/* Mobile and Tablet */
+@media screen and (max-width: 1023px) {
+  .features .content {
+    margin-top: 32px;
+  }
+}
+
+/* Tablet*/
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .footer div {
+    margin-top: 24px;
+  }
+}
+
+/* Mobile  */
+@media screen and (max-width: 739px) {
+  .footer div {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .footer .title {
+    padding: 12px 24px 4px;
+  }
+
+  .footer .socials {
+    justify-content: center;
+  }
+}

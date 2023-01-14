@@ -66,6 +66,7 @@
 
 .hero .body {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* Hero left */
@@ -194,7 +195,7 @@ a.hero-cta {
 }
 
 .hero .stats strong {
-  padding: 0 8px 0 28px;
+  padding-left: 28px;
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 4.4rem;
@@ -202,6 +203,13 @@ a.hero-cta {
   color: var(--black-color);
 }
 
+.hero .stats span {
+  font-family: var(--font-heading);
+  padding-right: 8px;
+  font-weight: 700;
+  font-size: 4.4rem;
+  color: var(--black-color);
+}
 /* -----------------------------
             POPULAR
 --------------------------------*/
@@ -254,15 +262,12 @@ a.hero-cta {
 }
 
 .popular .course-list {
-  display: flex;
-  gap: 30px;
   margin-top: 55px;
 }
 
 .popular .course-item {
-  flex: 1;
+  /* flex: 1; */
   background: var(--white-color);
-  border: 1px solid #e2dfda;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -271,7 +276,8 @@ a.hero-cta {
   border-color: transparent;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  transition: linear 0.3s;
+  transition: all linear 0.3s;
+  transform: translateY(-12px);
 }
 
 .popular .course-item .thumb {
@@ -280,10 +286,6 @@ a.hero-cta {
   margin: -1px;
   object-fit: cover;
   border-radius: 12px 12px 0px 0px;
-}
-
-.popular .course-item .thumb:hover {
-  transform: scale(1.02);
 }
 
 .popular .course-item .info {
@@ -355,7 +357,6 @@ a.hero-cta {
 }
 
 .feedback-list {
-  display: flex;
   overflow: hidden;
 }
 
@@ -454,7 +455,6 @@ a.hero-cta {
 }
 
 .features .body {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -538,11 +538,9 @@ a.hero-cta {
   display: flex;
   flex-wrap: wrap;
   margin-top: 55px;
-  /* overflow: hidden; */
 }
 
 .blog .blog-item {
-  flex-shrink: 0;
   width: calc(33.33% - 20px);
   background: var(--white-color);
   border-radius: 16px;
@@ -551,7 +549,8 @@ a.hero-cta {
 .blog .blog-item:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  transition: all 0.4s linear;
+  transition: all linear 0.4s;
+  transform: translateY(-12px);
 }
 
 .blog .blog-item .thumb {
@@ -652,17 +651,8 @@ a.hero-cta {
 }
 
 .footer .row {
-  display: flex;
   padding-bottom: 38px;
   border-bottom: 1px solid #59554b;
-}
-
-.footer .row .column {
-  width: 21.6%;
-}
-
-.footer .row .column:first-child {
-  width: 35%;
 }
 
 .footer .desc {
